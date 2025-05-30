@@ -1,0 +1,106 @@
+/* src/components/CSSComponents/CompanyCreate.module.css */
+
+.form-container {
+    padding: 30px;
+    max-width: 500px; /* Slightly narrower for better readability */
+    margin: 40px auto; /* More top/bottom margin to stand out */
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Softer shadow */
+    border: 1px solid #ddd; /* Lighter border */
+}
+
+.form-header {
+    font-size: 24px; /* Slightly smaller, but still prominent */
+    color: #333;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #007bff; /* Less prominent underline */
+    padding-bottom: 8px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Adjusted spacing */
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.form-input,
+.form-textarea {
+    width: calc(100% - 20px); /* Adjust for padding and border */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 100px; /* Slightly shorter textarea */
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+
+.action-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Smaller button padding */
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+.cancel-button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cancel-button:hover {
+    background-color: #5a6268;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: left; /* Align error message to the left */
+}
+
+.loading-text {
+    color: #007bff;
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}

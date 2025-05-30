@@ -1,0 +1,137 @@
+/* src/components/CSSComponents/TrainingCreate.module.css */
+
+.form-container {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.section-header {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Ensures padding doesn't increase total width */
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.error-text {
+    color: #d9534f; /* Red color for errors */
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+/* Base styles for action buttons (reused from TrainingList for consistency) */
+.action-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+    transform: translateY(-1px); /* Slight lift on hover */
+}
+
+.action-button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    transform: none; /* No lift when disabled */
+}
+
+/* Primary button style (e.g., Create Training) */
+.action-button.primary {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.action-button.primary:hover:not(:disabled) {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Secondary button style (e.g., Cancel) */
+.action-button.secondary {
+    background-color: #6c757d; /* Grey */
+    color: white;
+}
+
+.action-button.secondary:hover:not(:disabled) {
+    background-color: #5a6268; /* Darker grey on hover */
+}
+
+/* Specific styles for create and cancel buttons in TrainingCreate */
+.create-button {
+    /* Enhanced styles for the Create button */
+    background: linear-gradient(45deg, #28a745, #218838); /* Green gradient */
+    color: white;
+    padding: 12px 25px; /* Slightly larger padding */
+    font-size: 16px; /* Larger font size */
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease;
+}
+
+.create-button:hover:not(:disabled) {
+    background: linear-gradient(45deg, #218838, #1e7e34); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3); /* More pronounced shadow on hover */
+}
+
+.cancel-button {
+    /* Enhanced styles for the Cancel button */
+    background: linear-gradient(45deg, #6c757d, #5a6268); /* Grey gradient */
+    color: white;
+    padding: 12px 25px; /* Slightly larger padding */
+    font-size: 16px; /* Larger font size */
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(108, 117, 125, 0.2); /* Subtle shadow */
+    transition: all 0.3s ease;
+}
+
+.cancel-button:hover:not(:disabled) {
+    background: linear-gradient(45deg, #5a6268, #495057); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(108, 117, 125, 0.3); /* More pronounced shadow on hover */
+}

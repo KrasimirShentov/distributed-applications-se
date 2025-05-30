@@ -1,0 +1,88 @@
+/* In src/App.css or a global stylesheet */
+
+/* General button styles (ensure these exist) */
+.action-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.action-button.primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.action-button.primary:hover {
+    background-color: #0056b3;
+}
+
+/* Specific styles for top-right button placement */
+.header-with-button {
+    display: flex;
+    justify-content: space-between; /* Pushes content to ends */
+    align-items: center; /* Vertically aligns items */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+/* Ensure your section-header also has appropriate margins */
+.section-header {
+    margin: 0; /* Remove default margin to let flexbox control spacing */
+    flex-grow: 1; /* Allows header to take available space */
+}
+
+.action-button.top-right {
+    margin-left: auto; /* Pushes the button to the right */
+    /* You might want to adjust padding/margin as needed here */
+}
+
+/* Optional: Styles for form-container if it needs to be styled for inline rendering */
+.form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px; /* Add space below the form */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.form-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #6c757d;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #5a6268;
+}
